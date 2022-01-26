@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>s04-activity</title>
+	</head>
+	<body>
+		<header>
+			<h1>Zuitt IT Solutions</h1>
+		</header>
+		<section name="products_offered">
+			<h3>Products Offered</h3>
+
+			<table border="1">
+
+				<thead>
+					<tr>
+						<th>Package</th>
+						<th>Price</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td>Basic</td>
+						<td>&#8369;&nbsp;500.00</td>
+						<td>Package includes a fully functional website with desired specifications</td>
+					</tr>
+
+					<tr>
+						<td>Premium</td>
+						<td>&#8369;&nbsp;1000.00</td>
+						<td>Enjol all the benefits from the basic package and also includes site support and maintenance</td>
+					</tr>
+
+					<tr>
+						<th colspan="3" align="center">Additional features after initial projects is inclusive of charges</th>
+					</tr>
+				</tbody>
+
+			</table>
+		</section>
+		<br/>
+		<section name="contact_form">
+			<h3>Contact Form</h3>
+			<form action="">
+				<label for="firstName">First Name:</label>
+				<br/>
+				<input type="text" name="first_name" id="firstName" required autocomplete>
+				<br/>
+
+				<label for="lastName">Last Name:</label>
+				<br/>
+				<input type="text" name="last_name" id="lastName" required autocomplete>
+				<br/>
+
+				<label for="email">Email:</label>
+				<br/>
+				<input type="email" name="email" id="email" required autocomplete>
+				<br/>
+
+				<label for="contactNumber">Contact Number:</label>
+				<br/>
+				<input type="number" name="contact_number" id="contactNumber" required autocomplete>
+				<br/>
+
+				<label for="serviceType">Service Type:</label>
+				<br/>
+				<select name="service_type" id="serviceType" required>
+					<option value="front_end">Front End</option>				
+					<option value="back_end">Back End</option>	
+					<option value="full_stack">Full Stack</option>						
+				</select>
+				<br/>
+
+				<label>Prefered Contact:</label>
+				<br/>
+					<input type="checkbox" name="contact1" value="email" id="contact1">
+					<label for="contact1">Email</label>
+					<br/>
+					<input type="checkbox" name="contact1" value="phone" id="contact2">
+					<label for="contact2">Phone</label>
+				<br/>
+				
+				<label>Package:</label>
+					<br/>
+					<input type="radio" name="package" value="basic" id="package-type1" required>
+					<label for="package-type1">Basic</label>
+					<br/>
+					<input type="radio" name="package" value="premium" id="package-type2" required>
+					<label for="package-type2">Premium</label>
+					<br/>
+
+				<br/>
+				<button type="submit">Send Inquiry</button>
+				<button type="reset">Reset</button>
+			</form>
+
+		</section>
+	</body>
+</html>
